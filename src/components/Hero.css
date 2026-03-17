@@ -1,103 +1,18 @@
-.hero-container {
-    position: relative;
-    width: 100%;
+.hero-section{
     height: 100vh;
-    background-color: #000;
+    width: 100vw;
+    background-color: black;
+}
+.hero-content{
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 100px;
-    overflow: hidden;
-    color: #f5f5f7;
-    text-align: center;
+    height: 100vh;
+    width: 100vw;
 }
-
-.hero-content {
-    z-index: 2;
-    animation: fadeIn 1.5s ease-out;
-}
-
-.hero-title {
-    font-size: 56px;
-    font-weight: 600;
-    margin-bottom: 8px;
-    letter-spacing: -0.005em;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
-
-.hero-subtitle {
-    font-size: 28px;
-    font-weight: 400;
-    margin-bottom: 24px;
-    color: #f5f5f7;
-}
-
-.hero-cta {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-}
-
-.hero-button {
-    background-color: #0071e3;
-    color: #fff;
-    padding: 12px 24px;
-    border-radius: 980px;
-    font-size: 17px;
-    font-weight: 400;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.hero-button:hover {
-    background-color: #0077ed;
-}
-
-.hero-link {
-    color: #06c;
-    font-size: 21px;
-    text-decoration: none;
-}
-
-.hero-link:hover {
-    text-decoration: underline;
-}
-
-.hero-media {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 60%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-}
-
-.hero-placeholder-gradient {
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(20,20,20,1) 50%, rgba(50,50,50,1) 100%);
-    mask-image: linear-gradient(to bottom, transparent, black);
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@media (max-width: 734px) {
-    .hero-title {
-        font-size: 40px;
-    }
-    .hero-subtitle {
-        font-size: 21px;
-    }
+.hero-title{
+    font-size: 30px;
+    font-weight: 900;
+    color: #7b7a7a; 
 }

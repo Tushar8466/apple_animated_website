@@ -1,27 +1,19 @@
-'use client'
-import React, { useEffect, useRef } from 'react';
-import './Hero.css';
+import React from 'react'
+import './Hero.css'
 
-const Hero: React.FC = () => {
-  const videoRef = useRef<HTMLVideoElement>(null);
-
+function Hero() {
   return (
-    <section className="hero-container">
-      <div className="hero-content">
-        <h1 className="hero-title">iPhone 15 Pro</h1>
-        <p className="hero-subtitle">Titanium. So strong. So light. So Pro.</p>
-        <div className="hero-cta">
-          <Link href="#" className="hero-button">Buy</Link>
-          <Link href="#" className="hero-link">Learn more &gt;</Link>
+    <>
+      <section className='hero-section'>
+        <div className="hero-container">
+          <div className="hero-content">
+            <h1 className="hero-title">iPhone 15 Pro</h1>
+            <video src="https://iphone-doc.vercel.app/assets/videos/hero.mp4" autoPlay muted></video>
+          </div>
         </div>
-      </div>
-      <div className="hero-media">
-        {/* Placeholder for video or image */}
-        <div className="hero-placeholder-gradient"></div>
-      </div>
-    </section>
-  );
-};
+      </section>
+    </>
+  )
+}
 
-import Link from 'next/link';
-export default Hero;
+export default Hero
