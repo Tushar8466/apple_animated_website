@@ -1,3 +1,4 @@
+import Chip from "@/components/Chip";
 import Hero from "@/components/Hero";
 import Highlights from "@/components/Highlights";
 import Story from "@/components/Story";
@@ -8,6 +9,7 @@ export default function Home() {
       <Hero />
       <Highlights />
       <Story />
+      <Chip />
     </main>
   );
 }

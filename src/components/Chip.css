@@ -1,0 +1,65 @@
+.chip-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background-color: #000000;
+    min-height: 100vh;
+}
+
+.section-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 80px;
+}
+
+.section-image img {
+    object-fit: contain;
+    width: 200px;
+    height: auto;
+}
+
+.section-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+}
+
+.section-heading {
+    font-size: 84px;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.1;
+    margin: 0;
+    letter-spacing: -0.02em;
+}
+
+.section-subtext {
+    font-size: 24px;
+    font-weight: 500;
+    color: #86868b;
+    text-align: center;
+    max-width: 600px;
+    margin: 0;
+    line-height: 1.4;
+}
+
+@media (max-width: 768px) {
+    .section-heading {
+        font-size: 48px;
+    }
+    .section-subtext {
+        font-size: 18px;
+        max-width: 90%;
+    }
+    .section-image img {
+        width: 150px;
+    }
+}
